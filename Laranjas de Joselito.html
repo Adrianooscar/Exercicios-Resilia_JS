@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html pt-bt>
+    
+<head>
+
+        <meta charset="UTF-8">
+        <title>Laranjas de Roselito</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    
+<body>
+
+    <script>
+
+        function mostra (){
+         document.write(frase);
+     }
+     
+        function divisaoLaranjas(qtdLaranjas,qtdVizinhos){
+            
+            return Math.trunc = (qtdLaranjas/qtdVizinhos);
+        }
+
+        function restoDasLaranjas(qtdLaranjas,qtdVizinhos){
+            return qtdLaranjas % qtdVizinhos;
+        }
+
+        var qtdLaranjas = prompt("Quantas laranjas Joselito tem?")
+        var qtdVizinhos = prompt("Quantos vizinhos Joselito tem ?")
+        var laranjas = divisaoLaranjas(qtdLaranjas,qtdVizinhos);
+        var restolaranjas = restoDasLaranjas(qtdLaranjas,qtdVizinhos);
+        
+        
+        mostra = ("Cada vizinho teve " + divisaoLaranjas + "laranjas.E restou para Joselito" + restoDasLaranjas + "laranjas.")
+
+  
+       
+
+    </script> 
+
+    </body>
+    
+    
+
+    
+
+</html>

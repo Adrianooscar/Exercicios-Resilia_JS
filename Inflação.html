@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html pt-bt>
+
+        <meta charset="UTF-8">
+        <title>Inflação</title>
+       
+
+    <body>
+
+    <script>
+
+     function mostra (){
+         document.write(frase);
+         
+     }
+
+     function calculoEstimativaDiaria(valorInicial,valorFinal){
+                 return (valorFinal - valorInicial)/6;
+    }
+    
+                
+
+
+     //  inflação Tomate//
+
+     var nome = prompt ("Qual o seu nome?")
+     var preçoAtualTomate = parseInt (prompt ("Olá " + nome + ", tudo bem? Insira o valor atual do tomate."))
+     var preçoAntigoTomate = parseInt (prompt ("Qual era o valor antigo?"))
+     
+     var inflaçaoTomate =  (preçoAtualTomate - preçoAntigoTomate)
+     
+    mostra =  prompt ("A inflação do tomate é de " + inflaçaoTomate + " Reais. DE um ok para passar para o próximo produto.")
+
+
+    // Inflação Arroz//
+     var preçoAtualArroz = parseInt( prompt ("Insira o valor atual do Arroz."))
+     var preçoAntigoArroz = parseInt(prompt ("Qual era o valor antigo?")) 
+     
+     var inflaçaoArroz =  (preçoAtualArroz - preçoAntigoArroz)
+     
+
+    mostra =  prompt ("A inflação do Arroz é de " + inflaçaoArroz + " Reais. DE um ok para passar para o próximo produto.")
+
+    // inflação Cenoura//
+    var preçoAtualCenoura = parseInt (prompt ("Insira o valor atual do Cenoura.")) 
+     var preçoAntigoCenoura = parseInt(prompt ("Qual era o valor antigo?"))
+     
+     var inflaçaoCenoura =  (preçoAtualCenoura - preçoAntigoCenoura)
+     
+
+    mostra =  prompt ("A inflação do Cenoura é de " + inflaçaoCenoura + " Reais.")
+
+    
+    
+         // preços //
+     
+        var precoTomate01 = 3.30
+        var precoTomate02 = 4.70
+        var precoArroz03 = 2.99
+        var precoArroz04 = 3.25
+        var precoCenoura05 = 3.99
+        var precoCenoura06 = 4.14
+        
+         //estimativa// 
+        var estimativaTomate = calculoEstimativaDiaria(precoTomate01,precoTomate02);
+        var estimativaArroz = calculoEstimativaDiaria(precoArroz03,precoArroz04);
+        var estimativaCenoura = calculoEstimativaDiaria(precoCenoura05,precoCenoura06);
+   
+
+            
+    mostra = prompt ((inflaçaoTomate + inflaçaoArroz + inflaçaoCenoura)/3 + " Média geral de inflação <br>");
+        
+        mostra = prompt (estimativaTomate + " - Estimativa diaria do Tomate <br>");
+        mostra = prompt (estimativaArroz +" - Estimativa diaria do Arroz <br>");
+        mostra = prompt (estimativaCenoura +" - Estimativa diaria da Cenoura <br>");
+
+  
+  
+
+    </script>  
+
+    </body>
+    
+    
+
+    
+
+</html>
