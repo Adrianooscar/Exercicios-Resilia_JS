@@ -1,0 +1,47 @@
+
+<html>
+
+<html lang="pt-BR">
+ 
+ <head>
+
+ <meta charset="UTF-8">
+ <title>Página muito confiável</title>
+
+ </head>
+
+ <body>
+
+
+ <script>
+ 
+ 
+ var frase = prompt("Qual a frase a ser codificada?");
+        var codificador = parseInt(prompt("Quanto sera o deslocamento?"));
+        var fraseCodificada = "";
+        var fraseDescodificada = "";
+
+
+        for(i = 0 ; i < frase.length; i++){
+
+             fraseCodificada += String.fromCharCode(frase.charCodeAt(i) + codificador);
+            
+            
+        }
+        console.log(fraseCodificada);
+        
+        for(i = 0 ; i < fraseCodificada.length; i++){
+
+             
+            fraseDescodificada += String.fromCharCode(fraseCodificada.charCodeAt(i) - codificador);
+
+
+        }   
+        
+        console.log(fraseDescodificada);
+
+ </script>
+
+ </body>
+
+</html>
